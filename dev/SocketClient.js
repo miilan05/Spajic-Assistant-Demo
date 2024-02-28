@@ -6,11 +6,11 @@ export default class SocketClient {
 
     static socketInstance;
 
-    constructor(customRoom) {
+    constructor() {
         if (SocketClient.socketInstance) {
             this.socket = SocketClient.socketInstance;
         } else {
-            this.connect(customRoom);
+            this.connect();
             SocketClient.socketInstance = this.socket;
         }
     }
