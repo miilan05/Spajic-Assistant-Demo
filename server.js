@@ -6,7 +6,7 @@ const OpenAI = require("openai");
 const openai = new OpenAI();
 
 const PORT = 3000;
-const CLIENT_ORIGIN = ["http://localhost:8080", "http://10.1.1.105:8080"];
+const CLIENT_ORIGIN = ["https://miilan05.github.io"];
 
 const app = express();
 const server = http.createServer(app);

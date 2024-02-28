@@ -16,7 +16,7 @@ export default class SocketClient {
     }
 
     connect() {
-        this.socket = io("http://10.1.1.105:3000", {
+        this.socket = io("https://spajic-assistant-demo.fly.dev", {
             withCredentials: true,
             extraHeaders: {
                 "my-custom-header": "abcd",
